@@ -1,0 +1,8 @@
+require 'dedsec.ui.tree'
+require 'dedsec.ui.git'
+require 'dedsec.ui.lualine'
+require 'dedsec.ui.components'
+require 'dedsec.ui.terminal'
+require 'dedsec.ui.barbar'
+require 'dedsec.ui.dashboard'
+require 'dedsec.ui.telescope'
