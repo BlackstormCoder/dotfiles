@@ -50,7 +50,7 @@ sudo sh -c "echo 'type=image' >> /usr/share/sddm/themes/sugar-candy/theme.conf.u
 ```
 </details>
 <details>
-<summary>I have a Nvidia graphic card so I have to make bash file to run `Hyprland`</summary>
+<summary>I have a Nvidia graphic card so I have to make bash file to run `Hyprland` </summary>
 <br>  
     
 `wrappedhl`
