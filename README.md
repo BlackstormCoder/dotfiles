@@ -68,6 +68,7 @@ export XCURSOR_THEME=Catppuccin-Mocha-Dark-Cursors
 
 export LIBVA_DRIVER_NAME=nvidia
 export XDG_SESSION_TYPE=wayland
+# Commented out these two lines because they were causing problems in Firefox.
 #export GBM_BACKEND=nvidia-drm
 #export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export WLR_NO_HARDWARE_CURSORS=1
