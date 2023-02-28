@@ -2,11 +2,11 @@
 This is my customise Hyprland WM
 
 ## Preview
-![rice1](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dots/main/assets/rice1.png)
-![rice2](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dots/main/assets/rice2.png)
+![rice1](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dot/main/assets/rice1.png)
+![rice2](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dot/main/assets/rice2.png)
 
 ### Gorgeous SDDM Login Manger
-![sddm](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dots/main/assets/SDDM.png)
+![sddm](https://raw.githubusercontent.com/BlackstormCoder/Hyprland-dedsec-dot/main/assets/SDDM.png)
 
 - Packages
     
