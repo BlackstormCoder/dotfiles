@@ -35,7 +35,7 @@ alias hosts="subl /etc/hosts"
 #alias redhawk="php /opt/redhawk/rhawk.php"
 #alias hiddeneye="sudo python3 /opt/hiddeneye/HiddenEye.py"
 alias sostable='socat TCP-L:4444 FILE:`tty`,raw,echo=0'
-
+source (/usr/bin/starship init fish --print-full-init | psub)
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
