@@ -39,6 +39,5 @@ alias sostable='socat TCP-L:4444 FILE:`tty`,raw,echo=0'
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-
-starship init fish | source
-
+zoxide init fish | source
+alias cd="__zoxide_z"
