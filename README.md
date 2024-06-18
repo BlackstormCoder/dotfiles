@@ -24,7 +24,7 @@ sudo apt install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com//BlackstormCoder/dotfiles.git --single-branch -b Kali_chroot_dot
+$ git clone git@github.com:BlackstormCoder/dotfiles.git --single-branch -b Kali_chroot_dot
 $ cd dotfiles
 ```
 
