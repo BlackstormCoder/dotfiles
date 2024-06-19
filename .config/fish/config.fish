@@ -3,6 +3,7 @@ set EDITOR nvim
 alias tmux='tmux -u'
 alias listener="sudo rlwrap nc -lvnp"
 alias ls="lsd"
+alias lah="lsd -lah"
 alias tree="lsd --tree"
 alias cp="cp -rv"
 alias rm="rm -rfv"
@@ -41,4 +42,6 @@ if status is-interactive
 end
 
 starship init fish | source
+zoxide init fish | source
 
+alias cd="z"
