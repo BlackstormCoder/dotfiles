@@ -41,3 +41,6 @@ if status is-interactive
 end
 zoxide init fish | source
 alias cd="__zoxide_z"
+
+# Created by `pipx` on 2024-07-01 17:38:02
+set PATH $PATH /root/.local/bin
