@@ -44,3 +44,12 @@ alias cd="__zoxide_z"
 
 # Created by `pipx` on 2024-07-01 17:38:02
 set PATH $PATH /root/.local/bin
+
+# Set binding for moving directory using ctrl+alt+->, <- 
+# Used fish_key_reader to get the key pressed and then add the Commands
+# commandline is used to print the updated directory
+bind \e\[1\;7D 'prevd; commandline -f repaint'
+bind \e\[1\;7C 'nextd; commandline -f repaint'
+
+
+
