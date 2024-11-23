@@ -36,7 +36,7 @@ alias hosts="subl /etc/hosts"
 #alias redhawk="php /opt/redhawk/rhawk.php"
 #alias hiddeneye="sudo python3 /opt/hiddeneye/HiddenEye.py"
 alias sostable='socat TCP-L:4444 FILE:`tty`,raw,echo=0'
-alias wpe_server='cd /root/shared/wpe_server/; ls -lah; updog -p 80'
+alias wpe_server='ls -lah /root/shared/wpe_server/; updog -p 80 -d /root/shared/wpe_server/'
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
