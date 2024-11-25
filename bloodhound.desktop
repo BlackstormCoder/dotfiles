@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/opt/BloodHound-linux-x64/BloodHound  --no-sandbox
+Name=BloodHound
+Icon=/opt/BloodHound-linux-x64/resources/app/src/img/icon@2x.png
+StartupWMClass=bloodhound
+
