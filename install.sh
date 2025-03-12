@@ -51,6 +51,9 @@ app=(fish
     clang
     kali-win-kex
     stow
+    python3.13-venv
+    npm
+    zoxide
 )
 for apps in ${app[@]}; do 
     echo -e  "$CAT Installing $apps ..."
