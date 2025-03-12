@@ -79,10 +79,12 @@ done
 
 install_neovim(){
     # Installing neovim 
+    chown -R $USER:$USER /opt
     echo -e "$CAT Installing neovim"
-    curl -L $(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | grep 'browser_' | cut -d\" -f4 | grep 'linux.*gz$') --output nvim.tar.gz &>>$INSTLOG
+    URL=$(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | grep 'browser_' | cut -d\" -f4 | grep 'linux-x86.*gz$')
+    curl -L $URL --output nvim.tar.gz &>>$INSTLOG
     tar -xzvf nvim.tar.gz -C /opt/ &>>$INSTLOG
-    mv /opt/nvim-linux64 /opt/nvim
+    mv /opt/nvim-linux-* /opt/nvim
     ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
     rm nvim.tar.gz
     #git clone https://github.com/BlackstormCoder/neovim_dotfiles.git &>>$INSTLOG 
