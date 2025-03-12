@@ -54,6 +54,7 @@ app=(fish
     python3.13-venv
     npm
     zoxide
+    xsel
 )
 for apps in ${app[@]}; do 
     echo -e  "$CAT Installing $apps ..."
