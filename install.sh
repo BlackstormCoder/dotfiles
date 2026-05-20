@@ -283,7 +283,8 @@ backup_config nvim
 # ==================================================
 echo -e "$CNT Copying configuration files..."
 
-cp -r "$CONFIG_SOURCE/*" "$USER_HOME/.config/"
+cp -r "$CONFIG_SOURCE"/* "$USER_HOME/.config/"
+
 
 
 # # tmux config
