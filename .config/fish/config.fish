@@ -9,6 +9,7 @@ alias lt="eza --tree --level=2 --icons"
 alias tree="eza --tree --level=2 --icons"
 alias cp="cp -rv"
 alias rm="rm -rf"
+alias apt="nala"
 alias copy="xsel -b < $1"
 alias bp='bpython'
 #alias mv='mv -r'
