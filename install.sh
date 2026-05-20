@@ -283,13 +283,13 @@ backup_config nvim
 # ==================================================
 echo -e "$CNT Copying configuration files..."
 
-cp -r "$CONFIG_SOURCE/fish" "$USER_HOME/.config/"
-cp -r "$CONFIG_SOURCE/nvim" "$USER_HOME/.config/"
+cp -r "$CONFIG_SOURCE/*" "$USER_HOME/.config/"
 
-# tmux config
-if [ -f "$SCRIPT_DIR/.tmux.conf" ]; then
-    cp "$SCRIPT_DIR/.tmux.conf" "$USER_HOME/"
-fi
+
+# # tmux config
+# if [ -f "$SCRIPT_DIR/.tmux.conf" ]; then
+#     cp "$SCRIPT_DIR/.tmux.conf" "$USER_HOME/"
+# fi
 
 
 
