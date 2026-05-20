@@ -180,6 +180,18 @@ for pkg in "${packages[@]}"; do
 done
 
 # ==================================================
+# Check if Nerd Font is installed
+# ==================================================
+check_nerd_font_installed() {
+    # Check if JetBrainsMono Nerd Font is already installed
+    if fc-list | grep -i "JetBrainsMono" &>/dev/null; then
+        return 0  # Font is installed
+    else
+        return 1  # Font is not installed
+    fi
+}
+
+# ==================================================
 # Install Nerd Fonts
 # ==================================================
 install_nerd_fonts() {
@@ -203,8 +215,12 @@ install_nerd_fonts() {
     echo -e "$COK Nerd Fonts installed."
 }
 
-install_nerd_fonts
-
+# Check and install fonts only if not already present
+if check_nerd_font_installed; then
+    echo -e "$COK JetBrainsMono Nerd Font already installed."
+else
+    install_nerd_fonts
+fi
 # ==================================================
 # Install TPM
 # ==================================================
@@ -281,12 +297,17 @@ backup_config nvim
 # ==================================================
 # Copy Configs
 # ==================================================
+# ==================================================
+# Copy Configs
+# ==================================================
 echo -e "$CNT Copying configuration files..."
-echo -e "#############################################"
-pwd
-echo -e "#############################################"
 
-cp -r "$CONFIG_SOURCE"/* "$USER_HOME/.config/"
+if [ -d "$CONFIG_SOURCE" ]; then
+    cp -r "$CONFIG_SOURCE"/* "$USER_HOME/.config/"
+else
+    echo -e "$CER Config source not found at: $CONFIG_SOURCE"
+    exit 1
+fi
 
 
 
