@@ -2,8 +2,11 @@ set fish_greeting
 set EDITOR nvim
 alias tmux='tmux -u'
 alias listener="sudo rlwrap nc -lvnp"
-alias ls="lsd"
-alias tree="lsd --tree"
+alias ls="eza --icons"
+alias ll="eza -lah --icons"
+alias la="eza -a --icons"
+alias lt="eza --tree --level=2 --icons"
+alias tree="eza --tree --level=2 --icons"
 alias cp="cp -rv"
 alias rm="rm -rf"
 alias copy="xsel -b < $1"
