@@ -111,7 +111,7 @@ fi
 
 cd "$INSTALL_DIR"
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$INSTALL_DIR"
 CONFIG_SOURCE="$SCRIPT_DIR/.config"
 
 # ==================================================
@@ -242,6 +242,14 @@ install_tpm
 
 
 # ==================================================
+# Check if Fisher plugin is installed
+# ==================================================
+check_fisher_plugin_installed() {
+    local plugin=$1
+    fish -c "fisher list 2>/dev/null" | grep -q "$plugin"
+}
+
+# ==================================================
 # Install Fisher
 # ==================================================
 install_fisher() {
@@ -264,9 +272,12 @@ install_fisher() {
 
     for plugin in "${plugins[@]}"; do
 
-        echo -e "$CAT Installing Fish plugin: $plugin"
-
-        fish -c "fisher install $plugin"
+        if check_fisher_plugin_installed "$plugin"; then
+            echo -e "$COK Fish plugin already installed: $plugin"
+        else
+            echo -e "$CAT Installing Fish plugin: $plugin"
+            fish -c "fisher install $plugin"
+        fi
 
     done
 }
