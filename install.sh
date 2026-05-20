@@ -282,6 +282,9 @@ backup_config nvim
 # Copy Configs
 # ==================================================
 echo -e "$CNT Copying configuration files..."
+echo -e "#############################################"
+pwd
+echo -e "#############################################"
 
 cp -r "$CONFIG_SOURCE"/* "$USER_HOME/.config/"
 
